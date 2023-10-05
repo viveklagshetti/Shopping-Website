@@ -1,0 +1,377 @@
+/* imported css */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color : #ffffff;
+    --second1-bg-color: #e0e0e093;
+    --text-color :#212121;
+    --second-bg-color :#424242;
+    --main-color : #18ffff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+/* body design */
+
+/* header section design starts */
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 5px solid var(--second1-bg-color);
+    z-index: 200;
+    top: 0%;
+    max-height: 100px;
+    background-color:  var(--bg-color);
+}
+
+nav {
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-section {
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+}
+.nav-section a {
+    margin-left: 10px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+.nav-logo {
+    margin-left: 50px;
+}
+.nav-logo img {
+    height: 60px;
+    width: 180px;
+}
+.nav-section .search {
+    display: flex;
+    flex-grow: 2;
+    font-size: 20px;
+    border: 1px solid var(--second-bg-color);
+    border-radius: 20px;
+    width: 150px;
+    margin-left: 110px;
+    background-color: var(--second1-bg-color);
+    flex-direction: row;
+}
+.nav-section .search i {
+    margin: 0;
+    padding: 0%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: var(--second-bg-color);
+}
+.nav-section .search input {
+    width: 100%;
+    padding-left: 0px;
+    background: transparent;
+    font-size: 17px;
+}
+.nav-section .search input::placeholder {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+/* header section design ends */
+
+
+/* navbar section design starts */
+.navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+.navbar-contain {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: var(--second-bg-color);
+    padding-bottom: 5px;
+}
+.content-pic img {
+    height: 80px;
+    width: 80px;
+}
+
+.content-name {
+    font-size: larger;
+    font-weight: 550;
+}
+#main-page-pic {
+    width: 100%;
+    height: 180px;
+    padding-bottom: 5px;
+}
+
+/* sellers design starts */
+.sellers {
+    margin: 25px;
+}
+.sellers-container {
+    display: flex;
+    justify-content: space-between;
+}
+.sellers-heading h1 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.sellers-container .s-small-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    max-width: 100%;
+}
+
+.s-small-container .s-video-container video {
+    height:250px;
+    width: 250px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.s-small-container .s-video-container video::-webkit-media-controls {
+    display: none;
+}
+.s-small-container .s-video-name {
+    font-size: 15px;
+    color: var(--second-bg-color);
+    font-weight: 600;
+}
+
+
+/* sellers design ends */
+
+/* deals design starts */
+.deals {
+    margin: 25px;
+}
+.all-deals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+} 
+.deals-container .deals-images img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 350px;
+    width: 350px;
+}
+.device-head {
+    display: flex;
+    justify-content: space-between;
+}
+.deals-container {
+}
+.deals-container .deals-info h2 {
+    color: var(--second-bg-color);
+}
+.deals-info .device-head .device-color-types span {
+    border-radius: 50%;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+.deals-container .device-body {
+ display: flex;
+ justify-content: space-between;
+}
+.deals-container .device-body #bold-ruppee{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.deals-container .device-body #deleted-ruppee{
+    font-size: 15px;
+    color: var(--second-bg-color);
+    text-decoration: line-through;
+}
+
+.deals-container .device-body #prize-off{
+    font-size: 12px;
+    color:var(--main-color);     
+    font-weight: bold;
+    margin-left: 3px;
+}
+.deals-container .device-body #rating {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--second-bg-color);
+    margin-left: 5px;
+}
+.deals-container .device-body .star {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.deals-container .deals-info .device-body .add-to-cart button{
+   margin-top: 3px;
+    font-size: 15px;
+    background-color: var(--second-bg-color);
+    padding: 13px;
+    border-radius: 8px;
+    color: var(--bg-color);
+}
+
+/* deals design ends */
+
+/* waranty-images design starts */
+
+.warranty-images {
+    background-color: var(--bg-color);
+    width: 100%;
+}
+.warranty-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 150px;
+}
+.warranty-shipping {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+.warranty-shipping .warranty-info {
+    font-size: 18px;
+    
+}
+.warranty-shipping .warranty-pic img {
+    /* height: 60px;
+    width: 90px;
+     */
+     aspect-ratio: 2/1;
+     object-fit: contain;
+}
+.warranty-shipping .warranty-info p b {
+    font-weight: 800;
+    
+}
+
+/* waranty-images design ends */
+
+/* lifestyle images design starts */
+.lifestyle-images> div {
+    font-size: 15px;
+
+}
+
+.lifestyle-images {
+    background-color: var(--bg-color);
+    margin: 20px;
+}
+
+.lifestyle-container img {
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    filter: drop-shadow(-10px 10px 15px var(--main-color));
+
+}
+
+.lifestyle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* lifestyle images design ends */
+
+/* best of electrp design starts */
+
+.best-of-electro {
+    margin: 20px;
+}
+/* best of electrp design ends */
+
+/* footer section design starts */
+
+.footer-section {
+    background-color: var(--second1-bg-color);
+    margin: 20px;
+    width: 100%;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 35px;
+}
+.sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-right: 60px;
+}
+.sec1 h1 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+.sec1 input {
+    margin-top: 2rem;
+    height: 35px;
+    width: 400px;
+    margin-left: 30px;
+    font-size: 18px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    padding-left: 10px;
+}
+.sec1 img {
+    height: 150px;
+    width: 450px;
+}
+.sec2 {
+    flex-grow: 2;
+    margin-top: 2rem;
+    margin-bottom: 2px;
+}
+.sec2 li{
+  list-style-type: none;
+  margin: 2px;
+}
+.sec2 h3 {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.sec2 li a {
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+/* footer section design ends */
+
+
+
